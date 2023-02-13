@@ -5,7 +5,7 @@ int main()
 {
     char command[] = "G()(al)";
     int len = sizeof(command)/sizeof(command[0]);
-    char *res = (char *)malloc(len * sizeof(char)); 
+    char * res=(char *)calloc(strlen(command)+1,1);
     int i=0,j=0;
     while (command[i]!='\0')
     {
